@@ -1,0 +1,18 @@
+.board {
+  margin: auto;
+  align-items: center;
+  width: 320px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.modernbutton {
+  height: 40px;
+  width: 80px;
+  background-color: cornflowerblue;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
