@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Hello({ person }) {
   console.log(person);
   return (
@@ -7,6 +8,7 @@ function Hello({ person }) {
         {person.emoji}
       </h1>
       <h2>Your seat number : {person.seatnumbers}</h2>
+      <Link to="/">Home</Link>
     </>
   );
 }

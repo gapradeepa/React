@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useReducer } from "react";
-
+import { Link } from "react-router-dom";
 export default function BankAccountReducer() {
   const [state, dispatch] = useReducer(reducer, { balance: 0 });
   const [amount, setAmount] = useState(0);
@@ -34,6 +34,7 @@ export default function BankAccountReducer() {
           Withdraw
         </button>
       </div>
+      <Link to="/">Home</Link>
     </>
   );
 }

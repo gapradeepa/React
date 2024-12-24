@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { Link } from "react-router-dom";
 
 export default function ComplexobjectReducer() {
   const [state, dispatch] = useReducer(reducer, { count: 0, incrementBy: 1 });
@@ -24,6 +25,7 @@ export default function ComplexobjectReducer() {
       ></input>
       <button onClick={() => dispatch({ type: "inc" })}>Increment</button>
       <button onClick={() => dispatch({ type: "dec" })}> Decrement</button>
+      <Link to="/">Home</Link>
     </div>
   );
 }

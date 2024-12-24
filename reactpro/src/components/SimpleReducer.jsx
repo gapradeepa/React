@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-
+import { Link } from "react-router-dom";
 export default function SimpleReducer() {
   const [state, dispatch] = useReducer(reducer, 0);
 
@@ -20,6 +20,7 @@ export default function SimpleReducer() {
       <button onClick={() => dispatch({ type: "dec", payload: 1 })}>
         Decrement
       </button>
+      <Link to="/">Home</Link>
     </div>
   );
 }

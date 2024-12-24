@@ -1,4 +1,6 @@
 import Fruit from "./Fruit";
+import { Link } from "react-router-dom";
+
 export default function Fruits() {
   //const fruits = ["Apple", "Mango", "Banana", "Orange", "Pierce"];
 
@@ -35,6 +37,7 @@ export default function Fruits() {
           return <Fruit key={fruit.name} fruit={fruit} />;
         })}
       </ul>
+      <Link to="/">Home</Link>
     </div>
   );
 }
