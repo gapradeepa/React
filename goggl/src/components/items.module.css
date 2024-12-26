@@ -1,0 +1,18 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: 1;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
